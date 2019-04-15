@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/selectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+
+                android:layout_marginTop="92dp"
+                android:fontFamily="sans-serif-thin"
+                android:hint="Select Date..."
+                android:imeOptions="actionNext"
+                android:inputType="date"
+                android:lineSpacingExtra="8sp"
+                android:textColor="#090"
+                android:textColorHint="#090"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:typeface="monospace"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/startDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="104dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="TripStartDate"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/serialNoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif-thin"
+
+                android:text="Serial Number"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/serialNoET"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="92dp"
+                android:layout_marginRight="92dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="s no"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/VehicleNumberTV"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="164dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Vehicle Number"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/VehicleNumberET"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="156dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="Vehicle Number"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/CTnoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="228dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="CT NO"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/CTnoET"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="220dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="CT NO"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/factoryTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="289dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Factory"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/factoryET"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="272dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="factory"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/agentTV"
+                android:layout_width="50dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="342dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Agent"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/agentET"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="333dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="agent"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/drivernameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="404dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Driver Name"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/drivernameET"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="392dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="driver name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/drivernumTV"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="453dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Driver Number"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/drivernumET"
+                android:layout_width="172dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="445dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="contact number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/BillnumTV"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="516dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Bill Number"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/BillnumET"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="492dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="bill number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/BilldateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="564dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Bill Date"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/BilldateET"
+                android:layout_width="146dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="548dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="bill date..."
+                android:imeOptions="actionNext"
+                android:inputType="date"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/duedateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="619dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Due Date"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/duedateET"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="608dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="due date..."
+                android:imeOptions="actionNext"
+                android:inputType="date"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/amountTV"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="665dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Amount"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/amountET"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="652dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="amount"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/paymentStatusspinner"
+                android:layout_width="226dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="720dp"
+                android:background="@color/colorPrimary"
+                android:dropDownWidth="wrap_content"
+                android:spinnerMode="dialog"
+                android:textColor="#090"
+                android:textColorHint="#090"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/paymentstatusTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="720dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Payment Status"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/receivedDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="550dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Received Date"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/receivedDateET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="197dp"
+                android:layout_marginLeft="197dp"
+                android:layout_marginTop="762dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="received date..."
+                android:imeOptions="actionNext"
+                android:inputType="date"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/discountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="650dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Discount"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/discountET"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="810dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="discount"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dieselTV"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="740dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Diesel"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/dieselET"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="860dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="diesel"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/advanceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="830dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Advance"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/advanceET"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="196dp"
+                android:layout_marginLeft="196dp"
+                android:layout_marginTop="905dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="advance"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#090"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/saveinfobtn"
+                style="@android:style/Widget.DeviceDefault.Button.Toggle"
+                android:layout_width="match_parent"
+
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="990dp"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-black"
+                android:text="Save"
+                android:textColor="@color/ic_launcher_background"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/advanceET"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/saveinfobtn"
+
+                app:layout_constraintTop_toTopOf="parent"></ListView>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

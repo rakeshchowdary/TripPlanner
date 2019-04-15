@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="title_home">Home</string>
+    <string name="app_name">Voyage</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="dialog_message">This Will Clear All Your Data !!!</string>
+    <string name="dialog_title">Trip Planner</string>
+
+
+</resources>
